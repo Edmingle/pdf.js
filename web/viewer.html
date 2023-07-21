@@ -504,7 +504,7 @@ See https://github.com/adobe-type-tools/cmap-resources
       function finishLoading() {
         // Bind keyup and keydown event on document
         $(document).bind("keyup keydown", function(e){
-          let keyCodes = [79,80,83]
+          let keyCodes = [67,79,80,83,86]
               console.log(e.keyCode,e.ctrlKey);
               if(e.ctrlKey && keyCodes.includes(e.keyCode)){
                   e.preventDefault();

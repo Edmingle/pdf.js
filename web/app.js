@@ -1846,6 +1846,7 @@ const PDFViewerApplication = {
   },
 
   beforePrint() {
+    return false;
     this._printAnnotationStoragePromise = this.pdfScriptingManager
       .dispatchWillPrint()
       .catch(() => {
